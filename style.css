@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fuzzy Bubbles', sans-serif
+}
+
+@media screen and (min-width: 700px){
+    main{
+        display: flex;
+        padding: 20px;
+    }
+    canvas {
+        width: 300px;
+        height: 300px;
+    }
+    #sms{
+        border: 2px dashed #eee;
+        border-right: 2px solid #aaa;
+    }
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+main {
+    justify-content: space-around;
+}
+
+canvas {
+    background-color: #eee
+
+
+}
+
+.hidden {
+    display: none !important;
+}
+
+.containerword {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 12px; 
+    border: 1px solid #eee;
+    width: 100%;
+}
+
+#place_word {
+    display: flex;
+    justify-content: center;
+    padding: 12px
+}
+#place_word *{
+    display: flex;
+    margin: 5px;
+}
+#word{
+    min-width: 10rem;
+    min-height: 5rem;
+    border: 2px solid #aaa;
+    margin: 10px;
+}
+#sms{
+    width: 20rem;
+    min-height: 1rem;
+    margin: 0px;
+    overflow: auto;
+}
+#try{
+    overflow: auto;
+}
+#pop{
+    display: flex;
+    justify-content: center;
+    border: 1px outset #ddd;
+    width: 3rem;
+    margin: 5px;
+    padding: 5px;
+}
+
+#alpha{
+    width: 300px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    padding: 12px
+}
+
+#alpha *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    font-size: 16px;
+    border: 2px outset #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#alpha .used{
+    font-weight: bold;
+    text-decoration: line-through;
+    background-color: #eee;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result_message {
+    width: 30rem;
+    height: 30rem;
+}
+
+#result_msg_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    opacity: .5;
+    margin-bottom: 1rem;
+    height: 100%;
+    width: 100%;
+    font-size: 8rem;
+}
+
+.btn {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #eee;
+    border-radius: 1.5rem;
+}

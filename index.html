@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="./style.css">
+        <title>Hangman</title>
+    </head>
+    <body>
+        
+        <main>
+            <section>
+
+                <canvas id="cnv"></canvas>
+            </section>
+
+            <section>
+                <div class="container" style="display: flex; flex-direction: row; justify-content: center; padding: 6px; width: 100%;">
+                    <div class="containerword">
+                        <div style="font-size: 12px">
+                            Secret Word
+                        </div>
+                        <div id="place_word"></div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 12px; border: 1px solid #eee;">
+                        <div style="font-size: 12px">
+                            <nobr>Tries Left</nobr>
+                        </div>
+                        <div id="pop"></div>
+                    </div>
+                </div>
+
+                <div id="sms"></div>
+                <div id="alpha">
+                </div>
+                <div id="result" class="result_message hidden">
+                    <div id="result_msg_cont"></div>
+                    <button onclick="location. reload()" >restart</button>
+                </div>
+            
+            </section>
+        </main>
+    </body>
+    <script src="./script.js"></script>
+</html>
